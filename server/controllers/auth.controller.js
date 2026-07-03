@@ -1,4 +1,4 @@
-import User from '../models/user.model.js'
+import User from '../models/auth.model.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
@@ -89,7 +89,11 @@ export const loginUser = async (req, res) => {
 }
 
 
-
+export const logoutUser = (req, res) => {
+    res.status(200).json({
+        message: "Logged out successfully!"
+    })
+}
 
 
 
