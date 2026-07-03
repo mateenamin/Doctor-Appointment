@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv  from 'dotenv';
+import dbconnect from './config/config.js'
 
 dotenv.config();
 
@@ -17,7 +18,7 @@ app.get('/',(req, res )=>{
         message : "Welcome Brother"
     })
 })
-
+dbconnect()
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
