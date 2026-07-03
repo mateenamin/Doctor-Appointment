@@ -18,7 +18,12 @@ app.get('/',(req, res )=>{
         message : "Welcome Brother"
     })
 })
-dbconnect()
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+connectDB()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server started on port: ${PORT}`); 
+    });
+  })
+  .catch((err) => {
+    console.log("Database connection failed!", err);
+  });
