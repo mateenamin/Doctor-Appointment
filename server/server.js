@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv  from 'dotenv';
-import dbconnect from './config/config.js'
+import connectDB from './config/config.js'
+import router from './routes/index.js';
 
 dotenv.config();
 
@@ -10,18 +11,13 @@ const port = process.env.PORT || 3000;
 
 
 app.use(express.json());
+app.use('/api',router)
 
 
-app.get('/',(req, res )=>{
-
-    res.json({
-        message : "Welcome Brother"
-    })
-})
 connectDB()
   .then(() => {
-    app.listen(PORT, () => {
-      console.log(`Server started on port: ${PORT}`); 
+    app.listen(port, () => {
+      console.log(`Server started on port: ${port}`); 
     });
   })
   .catch((err) => {

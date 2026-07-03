@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import dns from "dns";
 dns.setServers(["8.8.8.8", "1.1.1.1"]); // Yeh line aapke internet ke block ko bypass karegi
 
-const dbconnect = async () => {
+const connectDB = async () => {
 
     try{
              await mongoose.connect(process.env.MONGO_URI);
@@ -15,4 +15,4 @@ const dbconnect = async () => {
 }
 
 
-export default dbconnect
+export default connectDB

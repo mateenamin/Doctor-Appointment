@@ -87,3 +87,33 @@ export const loginUser = async (req, res) => {
         })
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Token kya hai — samjho:
+// User login kiya → Server ne verify kiya → 
+// Server ne ek "pass" diya → yeh pass = TOKEN
+// Token ek proof hai ke tum logged in ho.
+
+// Token mein kya save hota hai:
+// javascriptjwt.sign({ id: user._id }, secret, { expiresIn: '7d' })
+// user._id → MongoDB ne jo ID assign ki thi 
+//            jab signup kiya tha
+//            Example: "64abc123..."
+
+// Yeh ID token ke andar chhupi hoti hai
+// Server baad mein token se ID nikal ke 
+// pehchanta hai — "yeh Ali hai"
