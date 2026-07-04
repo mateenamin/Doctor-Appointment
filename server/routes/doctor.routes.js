@@ -1,14 +1,15 @@
 import { Router } from "express";
+import {getAllDoctors, getDoctorById , updateDoctorProfile} from '../controllers/doctor.controller.js'
 
 
 const router = Router();
 
 
-router.get('/',)
+router.get('/', getAllDoctors)
 
-router.get('/id',)
+router.get('/id', getDoctorById)
 
-router.put('profile' ,)
+router.put('/profile' , updateDoctorProfile)
 
 
 export default router
