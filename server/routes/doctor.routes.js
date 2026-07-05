@@ -11,5 +11,4 @@ router.get('/id', getDoctorById)
 
 router.put('/profile' , updateDoctorProfile)
 
-
 export default router

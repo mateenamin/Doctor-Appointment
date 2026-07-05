@@ -10,4 +10,5 @@ router.post('/login' , loginUser )
 router.post('/logout', authMiddleware, logoutUser)
 
 
+
 export default router;
