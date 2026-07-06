@@ -1,5 +1,10 @@
 import { Router } from "express"
-
+import { 
+    getAllUsers,
+    getAllDoctors,
+    approveDoctor,
+    getAllAppointments
+} from '../controllers/admin.controller.js'
 
 import { Router } from 'express'
 import authMiddleware from '../middleware/auth.middleware.js'
