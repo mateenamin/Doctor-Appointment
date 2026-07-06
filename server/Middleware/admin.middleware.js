@@ -9,10 +9,10 @@ const adminMiddleware = (req, res, next) => {
     }
     // Step 2 — admin hai → aage jao
     next()
-
+}
     export default adminMiddleware
 
-}
+
 
 // Line by line:
 // req.user.role    → auth middleware ne save kiya tha

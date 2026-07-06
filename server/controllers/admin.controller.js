@@ -1,4 +1,4 @@
-import Auth from '../models/user.model.js'
+import Auth from '../models/auth.model.js'
 import Doctor from '../models/doctor.model.js'
 import Appointment from '../models/appointment.model.js'
 
