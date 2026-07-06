@@ -30,7 +30,11 @@ const doctorScheme = new mongoose.Schema({
     available  :{
         type : Boolean ,
         required : true,
-    }
+    },
+    isApproved: {
+    type: Boolean,
+    default: false
+},
 } ,
 
    {  timestamps : true}
