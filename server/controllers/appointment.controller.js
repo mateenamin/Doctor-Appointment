@@ -3,14 +3,22 @@ import Appointment from '../models/appointment.model.js'
 
 export const bookAppointment = async (req, res) => {
     try {
-        const { doctorId, date, time } = req.body
-        const userId = req.user.id
+        const { doctorID, date, time } = req.body
+        const userID = req.user.id
 
         // Naya appointment banao
         const appointment = new Appointment({
-            userID: userId,
-            doctorID: doctorId,
-            date,
+            userID: userID,
+            doctorID: doctorID,
+            //  Left     Right
+            //  Model    Variable
+
+
+
+            //    Shorthand bhi likh sakte ho:
+            //    userID,    // ✅ same as userID: userID
+            //    doctorID,  // ✅ same as doctorID: doctorID
+            date,   
             time
         })
 

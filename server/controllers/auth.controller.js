@@ -23,14 +23,21 @@ export const signUser = async (req, res) => {
         const newUser = new User({
             name,
             email,
-            password: hashedPassword
+            password: hashedPassword,
+
         })
 
         await newUser.save()
 
 
         res.status(201).json({
-            message: "User registered successfully!"
+            message: "User registered successfully!",
+            user: {
+        id: newUser._id,
+        name: newUser.name,
+        email: newUser.email,
+        role: newUser.role
+    }
         })
 
 
