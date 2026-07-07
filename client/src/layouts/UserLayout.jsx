@@ -3,7 +3,7 @@ import {Outlet}  from 'react-router-dom'
 import Navbar from '../components/common/Navbar.component';
 import Footer from '../components/common/footer.component';
 
-const UserLayout = () => {
+const UserLayout = ()=> {
   return (
     <div>
         <Navbar/>

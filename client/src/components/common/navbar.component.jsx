@@ -34,6 +34,7 @@ const Navbar = () => {
           </NavLink>
         </div>
 
+        
         {/* Buttons */}
         <div className="flex items-center gap-3">
           <NavLink to="/login"
