@@ -1,10 +1,6 @@
 
 
-
-
-
-
-
+import heroDoctor from '../../../assets/hero-doctor.jpg';
 
 
 
@@ -73,7 +69,7 @@ const HeroSection = () => {
 
           {/* Doctor Image */}
           <img
-            src="/images/hero-doctor.png"
+            src={heroDoctor}
             alt="Doctor"
             className="w-full max-w-lg object-cover rounded-3xl"
           />

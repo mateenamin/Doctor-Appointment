@@ -7,6 +7,9 @@ import {
 import UserLayout from "../layouts/UserLayout";
 
 
+import HomePage from "../pages/user/home.page";
+
+
 
 
 const Router = () => {
@@ -22,6 +25,7 @@ const Router = () => {
         </>
       ),
       children: [
+        { path: "", element: <HomePage /> }, 
     //     { path: "", element: <Home /> }, 
     // { path: "doctors/:id", element: <DoctorDetail /> },
     // { path: "appointments", element: <MyAppointments /> },
