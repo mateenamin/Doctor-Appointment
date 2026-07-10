@@ -1,6 +1,8 @@
 import HeroSection from "../../components/user/home/heroSection.component";
 import SpecializationsSection from "../../components/user/home/specializationsSection.component"
 import TopDoctorsSection from "../../components/user/home/topDoctorsSection.component"
+import HowItWorksSection from "../../components/user/home/howItWorksSection.component"
+
 
 const HomePage = () => {
   return (
@@ -8,8 +10,8 @@ const HomePage = () => {
       <HeroSection />
       <SpecializationsSection />
       <TopDoctorsSection />
-      {/* <HowItWorksSection />
-      <FeaturesSection />
+      <HowItWorksSection />
+      {/* <FeaturesSection />
       <StatsSection />
       <TestimonialsSection />
       <CtaSection /> */}
