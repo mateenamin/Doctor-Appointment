@@ -8,6 +8,8 @@ import UserLayout from "../layouts/UserLayout";
 
 
 import HomePage from "../pages/user/home.page";
+import DoctorsPage from '../pages/user/doctors.page'
+
 
 
 
@@ -25,10 +27,8 @@ const Router = () => {
         </>
       ),
       children: [
-        { path: "", element: <HomePage /> }, 
-    //     { path: "", element: <Home /> }, 
-    // { path: "doctors/:id", element: <DoctorDetail /> },
-    // { path: "appointments", element: <MyAppointments /> },
+        { path: "", element: <HomePage /> },
+        { path: "doctors", element: <DoctorsPage /> }, 
       ],
     
     },

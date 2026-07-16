@@ -19,7 +19,6 @@ const HomePage = () => {
       <StatsSection />
        <TestimonialsSection />
        <CtaSection />
-
        
     </main>
   )
