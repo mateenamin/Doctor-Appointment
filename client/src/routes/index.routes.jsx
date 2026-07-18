@@ -18,8 +18,6 @@ import DoctorDetailPage from '../pages/user/doctorDetail.page'
 
 
 
-
-
 const Router = () => {
 
 

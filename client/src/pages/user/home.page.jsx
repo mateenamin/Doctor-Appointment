@@ -7,7 +7,6 @@ import StatsSection from "../../components/user/home/statsSection.component"
 import TestimonialsSection from "../../components/user/home/testimonialsSection.component"
 import CtaSection from "../../components/user/home/ctaSection.component"
 
-
 const HomePage = () =>{
   return (
     <main className="overflow-y-auto scroll-smooth scrollbar-hide">
@@ -19,7 +18,6 @@ const HomePage = () =>{
       <StatsSection />
        <TestimonialsSection />
        <CtaSection />
-       
     </main>
   )
 }
