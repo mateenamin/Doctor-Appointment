@@ -6,7 +6,7 @@ import Footer from '../components/common/footer.component';
 
 const UserLayout = ()=> {
 
-    const { pathname } = useLocation()
+    const { pathname} = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)

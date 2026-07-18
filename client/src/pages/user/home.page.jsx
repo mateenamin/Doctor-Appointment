@@ -8,7 +8,7 @@ import TestimonialsSection from "../../components/user/home/testimonialsSection.
 import CtaSection from "../../components/user/home/ctaSection.component"
 
 
-const HomePage = () => {
+const HomePage = () =>{
   return (
     <main className="overflow-y-auto scroll-smooth scrollbar-hide">
       <HeroSection />
