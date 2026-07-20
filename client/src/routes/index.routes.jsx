@@ -17,6 +17,12 @@ import DoctorDetailPage from '../pages/user/doctorDetail.page'
 
 
 
+import LoginPage from '../pages/user/login.page'
+import SignupPage from '../pages/user/signup.page'
+
+
+
+
 
 const Router = () => {
 
@@ -33,7 +39,9 @@ const Router = () => {
       children: [
         { path: "", element: <HomePage /> },
         { path: "doctors", element: <DoctorsPage /> },
-        { path: "doctors/:id", element: <DoctorDetailPage /> }
+        { path: "doctors/:id", element: <DoctorDetailPage /> },
+        { path: "/login", element: <LoginPage /> },
+{ path: "/signup", element: <SignupPage /> }
  
       ],
     
