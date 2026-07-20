@@ -13,5 +13,4 @@ const DoctorDetailPage = () => {
     </main>
   )
 }
-
 export default DoctorDetailPage

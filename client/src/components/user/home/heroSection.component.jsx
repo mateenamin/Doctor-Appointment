@@ -3,7 +3,6 @@
 import heroDoctor from '../../../assets/hero-doctor.jpg';
 
 
-
 const HeroSection = () => {
   return (
     <section className="bg-[#EFF6FF] py-16 px-6">

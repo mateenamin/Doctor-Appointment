@@ -13,5 +13,4 @@ const DoctorsPage = () => {
     </main>
   )
 }
-
 export default DoctorsPage

@@ -44,7 +44,6 @@ const Router = () => {
 { path: "/signup", element: <SignupPage /> }
  
       ],
-    
     },
     // {
     //     path: "/admin",
