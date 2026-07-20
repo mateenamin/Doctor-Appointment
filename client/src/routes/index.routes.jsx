@@ -17,8 +17,8 @@ import DoctorDetailPage from '../pages/user/doctorDetail.page'
 
 
 
-import LoginPage from '../pages/user/login.page'
-import SignupPage from '../pages/user/signup.page'
+import LoginPage from '../pages/user/auth/loginForm.component'
+import SignupPage from '../pages/user/auth/signupForm.component'
 
 
 
@@ -41,10 +41,10 @@ const Router = () => {
         { path: "doctors", element: <DoctorsPage /> },
         { path: "doctors/:id", element: <DoctorDetailPage /> },
         { path: "/login", element: <LoginPage /> },
-{ path: "/signup", element: <SignupPage /> }
+        { path: "/signup", element: <SignupPage /> },
  
       ],
-    },
+    },  
     // {
     //     path: "/admin",
     //   element: (
