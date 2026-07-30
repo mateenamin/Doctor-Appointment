@@ -10,6 +10,7 @@ import UserLayout from "../layouts/UserLayout";
 import HomePage from "../pages/user/home.page";
 import DoctorsPage from '../pages/user/doctors.page'
 import DoctorDetailPage from '../pages/user/doctorDetail.page'
+import AboutPage from '../pages/user/about.page'
 
 
 
@@ -36,6 +37,7 @@ const Router = () => {
         { path: "", element: <HomePage /> },
         { path: "doctors", element: <DoctorsPage /> },
         { path: "doctors/:id", element: <DoctorDetailPage /> },
+        { path: "about", element: <AboutPage /> },
         { path: "/login", element: <LoginPage /> },
         { path: "/signup", element: <SignupPage /> },
  
