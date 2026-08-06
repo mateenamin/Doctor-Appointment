@@ -14,6 +14,10 @@ import AboutPage from '../pages/user/about.page'
 import ContactPage from '../pages/user/contact.page'
 
 
+import AdminLayout from '../layouts/AdminLayout'
+import DashboardPage from '../pages/admin/dashboard.page'
+
+
 
 import LoginPage from '../pages/user/auth/loginForm.component'
 import SignupPage from '../pages/user/auth/signupForm.component'
@@ -45,6 +49,13 @@ const Router = () => {
  
       ],
     },  
+    {
+  path: "/admin",
+  element: <AdminLayout />,
+  children: [
+    { path: "dashboard", element: <DashboardPage /> },
+  ]
+},
     // {
     //     path: "/admin",
     //   element: (
