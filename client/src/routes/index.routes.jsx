@@ -16,6 +16,9 @@ import ContactPage from '../pages/user/contact.page'
 
 import AdminLayout from '../layouts/AdminLayout'
 import DashboardPage from '../pages/admin/dashboard.page'
+import AdminDoctorsPage from '../pages/admin/doctors.page'
+import AdminAppointmentsPage from '../pages/admin/appointments.page'
+import AdminUsersPage from '../pages/admin/users.page'
 
 
 
@@ -54,6 +57,9 @@ const Router = () => {
   element: <AdminLayout />,
   children: [
     { path: "dashboard", element: <DashboardPage /> },
+      { path: "doctors", element: <AdminDoctorsPage /> },
+    { path: "appointments", element: <AdminAppointmentsPage /> },
+    { path: "users", element: <AdminUsersPage /> },
   ]
 },
     // {
