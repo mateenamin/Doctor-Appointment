@@ -73,7 +73,5 @@ const AdminUsersPage = () => {
         </table>
       </div>
     </div>
-  )
-}
-
+  )}
 export default AdminUsersPage
